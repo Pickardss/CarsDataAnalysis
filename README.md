@@ -9,7 +9,7 @@ This dataset includes;
 -type of car dealers
 -gear type of cars
 -type of car owners
-And the dataset contains information of 4340 cars
+And the dataset contains information of 4341 cars
 
 First i drew some graphs to analyze the data better
 types of graphs;
