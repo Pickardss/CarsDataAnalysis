@@ -30,7 +30,7 @@ plt.show()
 yillikSatis = df['year'].value_counts().reset_index()
 yillikSatis.columns = ['Yıl', 'Satış Miktarı']
 
-# Dik bar grafiği oluşturma
+# Bar grafiği oluşturma
 plt.figure(figsize=(12, 6))
 sns.barplot(x='Yıl', y='Satış Miktarı', data=yillikSatis, color='green')
 plt.xlabel('Yıl')
@@ -75,7 +75,7 @@ plt.show()
 # Yıla ve yakıt türüne göre satış miktarlarını hesapla
 yillikyakit = df.groupby(['year', 'fuel'])['selling_price'].count().reset_index()
 
-# Dik çubuk grafiği oluşturma
+# Bar grafiği oluşturma
 plt.figure(figsize=(12, 8))
 sns.barplot(x='year', y='selling_price', hue='fuel', data=yillikyakit, palette='Set2')
 plt.xlabel('Yıl')
